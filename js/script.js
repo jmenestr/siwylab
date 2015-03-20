@@ -8,13 +8,16 @@ $(document).ready(function() {
 
     $("#research_list a").each(function() {
         var id = $(this).data("topic");
-        console.log(id);
-        console.log($(this));
         $(this).click(function(e) {
             e.preventDefault();
-            $("#research_list a").each(function() {
+            if(!$("#"+id).hasClass("show")) {
+                $("#research section").each(function() {
+                    if($(this).hasClass("show")) {
+                        $(this).toggleClass("show");
+                    }
+                });
+            }
 
-            })
             $("#"+id).toggleClass("show");
         });
 
