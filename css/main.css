@@ -67,11 +67,16 @@ width:250px;
         line-height:normal;
     }
 }
-#banner {
+header .banner {
     text-align:center;
+    position:relative
+    overflow:auto;
 }
-#banner img  {
-    width:90%;
+header .banner li {list-style: none;}
+header .banner ul li { float:left;}
+
+header .banner img  {
+    width:100%;
     margin:0 auto;
 
 }
@@ -138,17 +143,26 @@ width:250px;
 #right_aside #anouncements ul li {
     padding:5px;
     font-size: 12px;
-    border-bottom:1px solid #0064a4;
-    border-left:1px solid #0064a4;
+    border-bottom:2px dotted #0064a4;
+
 
   }
+/*Research Styles */
 
 
 
 /*People Styles */
+#pi,#grad_students,#alumni {
+    border-bottom: 1px dotted #c6beb5;
+}
 #people  h1 {
     font-size: 2.5em;
-
+}
+#people > article h2 {
+    font-size: 1.5em;
+}
+#people section.profile {
+    margin: 15px 0;
 }
 #people section.profile h2 {
     font-size: 1.5em;
@@ -160,6 +174,7 @@ width:250px;
 #people section.profile img.person_image {
     float:left;
     margin:0 15px 15px 0;
+    border:1px solid black;
 }
 
 #people #pi section.profile img.person_image {
@@ -168,9 +183,7 @@ width:250px;
 #people #grad_students section.profile img.person_image {
     width:25%;
 }
-#people > article h2 {
-    font-size: 1.5em;
-}
+
 
 /*Publication Styles */
 
