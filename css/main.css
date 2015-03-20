@@ -122,7 +122,7 @@ header .banner img  {
     padding:10px;
 }
 #right_aside {
-    float:left;
+    float:right;
     padding-left: 10px;
     width:26%;
 }
@@ -154,8 +154,32 @@ header .banner img  {
 #research > section {
     display:none;
 }
+#research nav h1 {
+    font-size: 2em;
+    margin:15px 0;
+}
+#research nav ul li a {
 
-
+    color: #0064a4;
+    font-weight: bold;
+}
+#research > section h2 {
+    font-size:1.5em;
+}
+/*Nanopore Styles */
+#nanopore img#sem_top {
+    width:100%;
+}
+#nanopore img.damage {
+    display:block;
+    width:75%;
+    margin:15px auto;
+}
+#nanopore img#sem_side {
+    display:block;
+    width:60%;
+    margin:15px auto;
+}
 /*People Styles */
 #pi,#grad_students,#alumni {
     border-bottom: 1px dotted #c6beb5;
