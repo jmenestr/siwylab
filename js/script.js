@@ -6,6 +6,18 @@ $(document).ready(function() {
     var year = date.getFullYear();
     $("#copyright").text("Copyright " + year +" Swiy Lab")
 
-    $(".banner").unslider();
+    $("#research_list a").each(function() {
+        var id = $(this).data("topic");
+        console.log(id);
+        console.log($(this));
+        $(this).click(function(e) {
+            e.preventDefault();
+            $("#research_list a").each(function() {
 
+            })
+            $("#"+id).toggleClass("show");
+        });
+
+
+    });
 });

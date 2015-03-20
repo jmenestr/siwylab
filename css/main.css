@@ -148,7 +148,12 @@ header .banner img  {
 
   }
 /*Research Styles */
-
+#research > section.show {
+    display:block;
+}
+#research > section {
+    display:none;
+}
 
 
 /*People Styles */
