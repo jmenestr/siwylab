@@ -6,7 +6,7 @@ $(document).ready(function() {
     var year = date.getFullYear();
     $("#copyright").text("Copyright " + year +" Swiy Lab")
     
-    function hide_other_topcis(selected_topic) { //Hides old topic if the new selected topic is different from old
+    function hide_other_topics(selected_topic) { //Hides old topic if the new selected topic is different from old
         if(!$(selected_topic).hasClass("show")){
             $("#research section").each(function() {
                 $(this).removeClass("show");
