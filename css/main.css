@@ -13,6 +13,7 @@ a {
 .container {
     width:85%;
     margin:0 auto;
+    overflow:hidden;
 }
 
 /*Header Styles */
@@ -67,18 +68,29 @@ width:250px;
         line-height:normal;
     }
 }
-header .banner {
+/*Banner Sytles */
+header #banner {
     text-align:center;
-    position:relative
-    overflow:auto;
+    width:5000px;
 }
-header .banner li {list-style: none;}
-header .banner ul li { float:left;}
-
-header .banner img  {
+header #banner .banner_item {
+    float:left;
     width:100%;
-    margin:0 auto;
+}
 
+header #banner .banner_image  {
+    float:right;
+    width:70%;
+}
+
+header #banner .banner_image img  {
+    width:100%;
+}
+header #banner .banner_text {
+    float:left;
+    width:25%;
+    height:200px;
+    border: 1px solid black;
 }
 /*nav Styles */
 #mainNav ul {
@@ -180,6 +192,12 @@ header .banner img  {
     width:60%;
     margin:15px auto;
 }
+/*Nanopore Styles */
+#ion_circuit img {
+    width:85%;
+    margin: 10px auto;
+}
+
 /*People Styles */
 #pi,#grad_students,#alumni {
     border-bottom: 1px dotted #c6beb5;

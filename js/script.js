@@ -9,7 +9,9 @@ $(document).ready(function() {
     function hide_other_topics(selected_topic) { //Hides old topic if the new selected topic is different from old
         if(!$(selected_topic).hasClass("show")){
             $("#research section").each(function() {
-                $(this).removeClass("show");
+                if($(this).hasClass("show")) {
+                    $(this).toggleClass("show");
+                }
             });
         }
     }
